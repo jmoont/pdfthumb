@@ -8,10 +8,10 @@
  * @copyright Copyright (c) 2018 Josh Moont
  */
 
-namespace jadepad\pdfthumb\variables;
+namespace jmoont\pdfthumb\variables;
 
-use jadepad\pdfthumb\PDFThumb;
-use jadepad\pdfthumb\services\PDFThumbService;
+use jmoont\pdfthumb\PDFThumb;
+use jmoont\pdfthumb\services\PDFThumbService;
 
 use Craft;
 

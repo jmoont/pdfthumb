@@ -1,5 +1,5 @@
 {
-    "name": "jadepad/pdfthumb",
+    "name": "jmoont/pdfthumb",
     "description": "PDF thumbnail generation for Craft CMS 3 ",
     "type": "craft-plugin",
     "version": "1.0.4",
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-          "jadepad\\pdfthumb\\": "src/"
+          "jmoont\\pdfthumb\\": "src/"
         }
     },
     "extra": {
@@ -36,8 +36,8 @@
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/jmoont/pdfthumb/master/CHANGELOG.md",
         "components": {
-            "pDFThumbService": "jadepad\\pdfthumb\\services\\PDFThumbService"
+            "pDFThumbService": "jmoont\\pdfthumb\\services\\PDFThumbService"
         },
-        "class": "jadepad\\pdfthumb\\PDFThumb"
+        "class": "jmoont\\pdfthumb\\PDFThumb"
     }
 }

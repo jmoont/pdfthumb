@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2018 Josh Moont
  */
 
-namespace jadepad\pdfthumb\assetbundles\PDFThumb;
+namespace jmoont\pdfthumb\assetbundles\PDFThumb;
 
 use Craft;
 use craft\web\AssetBundle;
@@ -29,7 +29,7 @@ class PDFThumbAsset extends AssetBundle
      */
     public function init()
     {
-        $this->sourcePath = "@jadepad/pdfthumb/assetbundles/pdfthumb/dist";
+        $this->sourcePath = "@jmoont/pdfthumb/assetbundles/pdfthumb/dist";
 
         $this->depends = [
             CpAsset::class,

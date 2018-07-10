@@ -8,11 +8,11 @@
  * @copyright Copyright (c) 2018 Josh Moont
  */
 
-namespace jadepad\pdfthumb;
+namespace jmoont\pdfthumb;
 
-use jadepad\pdfthumb\services\PDFThumbService as PDFThumbServiceService;
-use jadepad\pdfthumb\variables\PDFThumbVariable;
-use jadepad\pdfthumb\models\Settings;
+use jmoont\pdfthumb\services\PDFThumbService as PDFThumbServiceService;
+use jmoont\pdfthumb\variables\PDFThumbVariable;
+use jmoont\pdfthumb\models\Settings;
 
 use Craft;
 use craft\base\Plugin;

@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2018 Josh Moont
  */
 
-namespace jadepad\pdfthumb\services;
+namespace jmoont\pdfthumb\services;
 
-use jadepad\pdfthumb\PDFThumb;
+use jmoont\pdfthumb\PDFThumb;
 
 use Craft;
 use craft\base\Component;
