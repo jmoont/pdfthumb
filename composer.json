@@ -3,7 +3,7 @@
     "description": "PDF thumbnail generation for Craft CMS 3 ",
     "type": "craft-plugin",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "support": {
       "email": "moonty@gmail.com",
       "docs": "https://github.com/jmoont/pdfthumb"
