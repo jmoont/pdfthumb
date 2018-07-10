@@ -1,27 +1,44 @@
 {
-    "name": "jmoont/pdfthumb",
-    "description": "PDF thumbnail generation for Craft CMS 3 ",
-    "type": "craft-plugin",
-    "license": "MIT",
-    "minimum-stability": "stable",
-    "support": {
-      "email": "moonty@gmail.com",
-      "docs": "https://github.com/jmoont/pdfthumb"
-    },
-    "require": {
+  "name": "jmoont/pdfthumb",
+  "description": "PDF thumbnail generation for Craft CMS 3 ",
+  "type": "craft-plugin",
+  "version": "1.0.4",
+  "minimum-stability": "dev",
+  "keywords": [
+      "craft",
+      "cms",
+      "craftcms",
+      "craft-plugin",
+      "pdfthumb"
+  ],
+  "support": {
+      "docs": "https://github.com/jmoont/pdfthumb/blob/master/README.md",
+      "issues": "https://github.com/jmoont/pdfthumb/issues"
+  },
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Josh Moont",
+          "homepage": "twitter.com/moonty"
+      }
+  ],
+  "require": {
       "craftcms/cms": "^3.0.0-RC1"
-    },
-    "autoload": {
+  },
+  "autoload": {
       "psr-4": {
         "jmoont\\pdfthumb\\": "src/"
       }
-    },
-    "extra": {
+  },
+  "extra": {
       "name": "PDFThumb",
       "handle": "pdfthumb",
-      "developer": "Josh Moont",
-      "developerUrl": "https://github.com/jmoont/",
-      "changelogUrl": "hhttps://raw.githubusercontent.com/jmoont/pdfthumb/master/CHANGELOG.md",
-      "downloadUrl": "https://github.com/jmoont/pdfthumb/archive/master.zip"
-    }
+      "hasCpSettings": true,
+      "hasCpSection": false,
+      "changelogUrl": "https://raw.githubusercontent.com/jmoont/pdfthumb/master/CHANGELOG.md",
+      "components": {
+          "pDFThumbService": "jmoont\\pdfthumb\\services\\PDFThumbService"
+      },
+      "class": "jmoont\\pdfthumb\\PDFThumb"
   }
+}
