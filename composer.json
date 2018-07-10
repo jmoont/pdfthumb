@@ -1,0 +1,43 @@
+{
+    "name": "jadepad/pdfthumb",
+    "description": "PDF thumbnail generation for Craft CMS 3 ",
+    "type": "craft-plugin",
+    "version": "1.0.4",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "pdfthumb"
+    ],
+    "support": {
+        "docs": "https://github.com/jmoont/pdfthumb/blob/master/README.md",
+        "issues": "https://github.com/jmoont/pdfthumb/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Moont",
+            "homepage": "twitter.com/moonty"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "jadepad\\pdfthumb\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "PDFThumb",
+        "handle": "pdfthumb",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/jmoont/pdfthumb/master/CHANGELOG.md",
+        "components": {
+            "pDFThumbService": "jadepad\\pdfthumb\\services\\PDFThumbService"
+        },
+        "class": "jadepad\\pdfthumb\\PDFThumb"
+    }
+}

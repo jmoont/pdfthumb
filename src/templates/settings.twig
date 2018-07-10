@@ -1,0 +1,34 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * PDFThumb plugin for Craft CMS 3.x
+ *
+ * PDFThumb Settings.twig
+ *
+ * @author    Josh Moont
+ * @copyright Copyright (c) 2018 Josh Moont
+ * @link      twitter.com/moonty
+ * @package   PDFThumb
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("jadepad\\pdfthumb\\assetbundles\\pdfthumb\\PDFThumbAsset") %}
+
+{{ forms.textField({
+    label: 'Storage Path',
+    instructions: 'Absolute path to PDF folder location. eg: @webroot/pdfs',
+    id: 'storage_path',
+    name: 'storage_path',
+    value: settings['storage_path']})
+}}
+
+{{ forms.textField({
+    label: 'Base URL',
+    instructions: 'Public URL to PDF folder. eg: http://craft.dev/pdfs/',
+    id: 'base_url',
+    name: 'base_url',
+    value: settings['base_url']})
+}}
