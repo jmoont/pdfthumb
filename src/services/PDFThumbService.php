@@ -62,9 +62,8 @@ class PDFThumbService extends Component
     }
 
     private function generate_thumbnail() {
-        $error_log = $this->storage_path() . 'log.txt';
         if( !file_exists($this->thumbnail_path()) ){
-          $segments = array("convert", $this->options(), $this->pdf() . "[0]", $this->thumbnail_path(), "> $error_log 2>&1");
+          $segments = array("convert", $this->options(), $this->pdf() . "[0]", $this->thumbnail_path());
           exec(join($segments, ' '));
         }
         return $this;
