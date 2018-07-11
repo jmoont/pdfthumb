@@ -2,7 +2,7 @@
   "name": "jmoont/pdfthumb",
   "description": "PDF thumbnail generation for Craft CMS 3 ",
   "type": "craft-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "minimum-stability": "dev",
   "keywords": [
       "craft",

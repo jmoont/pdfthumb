@@ -26,7 +26,6 @@ class PDFThumbService extends Component
     public $asset, $width, $height, $force_canvas_size, $filetype;
     private $cache_folder = 'previews/';
     private $settings;
-    private $debug = [];
 
     // Public Methods
     // =========================================================================
@@ -54,12 +53,7 @@ class PDFThumbService extends Component
         $this->filetype = $filetype;
 
         if (!empty($this->settings->base_url) && !empty($this->settings->storage_path)) {
-            
-
             $result = $this->generate_thumbnail()->url();
-            //$result = $this->debug["exec"];
-            //$result = $asset->dateModified;
-
         } else {
             $result = "Missing settings";
         }
@@ -68,9 +62,9 @@ class PDFThumbService extends Component
     }
 
     private function generate_thumbnail() {
+        $error_log = $this->storage_path() . 'log.txt';
         if( !file_exists($this->thumbnail_path()) ){
-          $segments = array("convert", $this->options(), $this->pdf() . "[0]", $this->thumbnail_path());
-          //$this->debug["exec"] = join($segments, ' ');
+          $segments = array("convert", $this->options(), $this->pdf() . "[0]", $this->thumbnail_path(), "> $error_log 2>&1");
           exec(join($segments, ' '));
         }
         return $this;
