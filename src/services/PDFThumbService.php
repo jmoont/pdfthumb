@@ -71,7 +71,7 @@ class PDFThumbService extends Component
       private function options() {
         $options = array(
           'density' => 144,
-          'colorspace' => 'RGB',
+          'colorspace' => 'sRGB',
           'resize' => $this->dimensions(),
           'gravity' => 'center',
           'background' => $this->background()
@@ -87,7 +87,8 @@ class PDFThumbService extends Component
         return $output;
       }
       private function background() {
-        return $this->filetype == 'png' ? 'transparent' : 'white';
+        return 'white';
+        //return $this->filetype == 'png' ? 'transparent' : 'white';
       }
       private function dimensions() {
         return $this->width . "x" . $this->height;
