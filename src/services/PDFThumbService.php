@@ -118,7 +118,7 @@ class PDFThumbService extends Component
           $this->asset->size, $this->asset->id, $this->asset->dateModified->format('Y-m-d H:i:s'),
           $this->dimensions(), $this->filetype, $this->force_canvas_size
         );
-        return md5(join($parts,'-'));
+        return md5(join('-',$parts)); //php 7.4 fix  
       }
       private function slashify($string) {
         $string = trim($string, '/');
