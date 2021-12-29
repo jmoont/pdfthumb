@@ -111,7 +111,7 @@ class PDFThumbService extends Component
         return $this->storage_path() . $this->cache_folder;
       }
       private function pdf() {
-        return $this->storage_path() . $this->asset->filename;
+        return $this->storage_path() . $this->asset->folderPath . $this->asset->filename;
       }
       private function cache_key() {
         $parts = array(
