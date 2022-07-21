@@ -2,7 +2,7 @@
 /**
  * PDFThumb plugin for Craft CMS 3.x
  *
- * PDF thumbnail generation for Craft CMS 3 
+ * PDF thumbnail generation for Craft CMS 3
  *
  * @link      twitter.com/moonty
  * @copyright Copyright (c) 2018 Josh Moont
@@ -10,9 +10,6 @@
 
 namespace jmoont\pdfthumb\models;
 
-use jmoont\pdfthumb\PDFThumb;
-
-use Craft;
 use craft\base\Model;
 
 /**
@@ -46,7 +43,7 @@ class Settings extends Model
         return [
             ['storage_path', 'string'],
             ['base_url', 'string'],
-            [['base_url','storage_path'], 'required'],
+            [['base_url', 'storage_path'], 'required'],
         ];
     }
 }

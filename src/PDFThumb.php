@@ -2,7 +2,7 @@
 /**
  * PDFThumb plugin for Craft CMS 3.x
  *
- * PDF thumbnail generation for Craft CMS 3 
+ * PDF thumbnail generation for Craft CMS 3
  *
  * @link      twitter.com/moonty
  * @copyright Copyright (c) 2018 Josh Moont
@@ -10,16 +10,12 @@
 
 namespace jmoont\pdfthumb;
 
-use jmoont\pdfthumb\services\PDFThumbService as PDFThumbServiceService;
-use jmoont\pdfthumb\variables\PDFThumbVariable;
-use jmoont\pdfthumb\models\Settings;
-
 use Craft;
 use craft\base\Plugin;
-use craft\services\Plugins;
-use craft\events\PluginEvent;
 use craft\web\twig\variables\CraftVariable;
-
+use jmoont\pdfthumb\models\Settings;
+use jmoont\pdfthumb\services\PDFThumbService as PDFThumbServiceService;
+use jmoont\pdfthumb\variables\PDFThumbVariable;
 use yii\base\Event;
 
 /**
@@ -67,15 +63,6 @@ class PDFThumb extends Plugin
                 /** @var CraftVariable $variable */
                 $variable = $event->sender;
                 $variable->set('PDFThumb', PDFThumbVariable::class);
-            }
-        );
-
-        Event::on(
-            Plugins::class,
-            Plugins::EVENT_AFTER_INSTALL_PLUGIN,
-            function (PluginEvent $event) {
-                if ($event->plugin === $this) {
-                }
             }
         );
 
