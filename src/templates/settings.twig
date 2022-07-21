@@ -1,21 +1,4 @@
-{# @var craft \craft\web\twig\variables\CraftVariable #}
-{#
-/**
- * PDFThumb plugin for Craft CMS 3.x
- *
- * PDFThumb Settings.twig
- *
- * @author    Josh Moont
- * @copyright Copyright (c) 2018 Josh Moont
- * @link      twitter.com/moonty
- * @package   PDFThumb
- * @since     1.0.0
- */
-#}
-
 {% import "_includes/forms" as forms %}
-
-{% do view.registerAssetBundle("jmoont\\pdfthumb\\assetbundles\\pdfthumb\\PDFThumbAsset") %}
 
 {{ forms.textField({
     label: 'Storage Path',

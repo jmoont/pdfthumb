@@ -2,7 +2,7 @@
 /**
  * PDFThumb plugin for Craft CMS 3.x
  *
- * PDF thumbnail generation for Craft CMS 3 
+ * PDF thumbnail generation for Craft CMS 3
  *
  * @link      twitter.com/moonty
  * @copyright Copyright (c) 2018 Josh Moont
@@ -10,10 +10,7 @@
 
 namespace jmoont\pdfthumb\variables;
 
-use jmoont\pdfthumb\PDFThumb;
 use jmoont\pdfthumb\services\PDFThumbService;
-
-use Craft;
 
 /**
  * @author    Josh Moont
