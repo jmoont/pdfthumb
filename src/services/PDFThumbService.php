@@ -64,7 +64,7 @@ class PDFThumbService extends Component
     private function generate_thumbnail() {
         if( !file_exists($this->thumbnail_path()) ){
           $segments = array("convert", $this->options(), $this->pdf() . "[0]", $this->thumbnail_path());
-          exec(join($segments, ' '));
+          exec(join(' ', $segments));
         }
         return $this;
       }
@@ -118,7 +118,7 @@ class PDFThumbService extends Component
           $this->asset->size, $this->asset->id, $this->asset->dateModified->format('Y-m-d H:i:s'),
           $this->dimensions(), $this->filetype, $this->force_canvas_size
         );
-        return md5(join($parts,'-'));
+        return md5(join('-', $parts));
       }
       private function slashify($string) {
         $string = trim($string, '/');
