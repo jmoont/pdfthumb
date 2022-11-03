@@ -1,6 +1,6 @@
-# PDFThumb plugin for Craft CMS 3.x
+# PDFThumb plugin for Craft CMS 3.x & 4.x
 
-PDF thumbnail generation for Craft CMS 3 
+PDF thumbnail generation for Craft CMS 3 and Craft CMS 4
 
 ## Usage
 
